@@ -1,0 +1,217 @@
+@import "variables";
+
+.middle-wrapper{
+  @include wrapper;
+  display: flex;
+  background-color: white;
+  justify-content: space-around;
+  flex-direction: column;
+}
+.day-offer{
+  display: flex;
+  width: 70%;
+  justify-content: space-evenly;
+  margin: 0 auto 120px;
+
+}
+.most-popular{
+  background: url("img/img-1.png") no-repeat;
+  width: $width - 53%;
+  background-size: contain
+
+}
+.popular{
+  display: flex;
+  flex-direction: column;
+  width: $width - 55%;
+  //background: aqua;
+  height: 400px;
+  justify-content: space-between;
+
+}
+.top-image{
+  background: url("img/img-2.png") no-repeat;
+  width: $width;
+  height: 175px;
+  background-size: contain;
+}
+.bottom-image{
+  background: url("img/img-3.png") no-repeat;
+  width: $width;
+  height: 175px;
+  background-size: contain;
+}
+.offer{
+  @include offer;
+}
+//.choose{
+//  display: flex;
+//}
+.products{
+  display: flex;
+  width: $width;
+  justify-content: space-around;
+}
+.product-cart{
+  display: flex;
+  flex-direction: column;
+  width: 30%;
+}
+.product-cart{
+h3{
+  font-size: 40px;
+  text-align: center;
+}
+}
+.choose{
+  margin-bottom: 120px;
+}
+.choose .products .product-cart {
+  span {
+    font-size: 20px;
+    width: $width;
+    padding: 10px;
+    box-sizing: border-box;
+    @include sample;
+  }
+}
+.choose {
+  p {
+    @include sampleP;
+  }
+}
+.choose{
+  h2{
+    @include sampleH2;
+  }
+}
+.choose{
+  span{
+    display: block;
+    font-size: 20px;
+    width: 70%;
+    @include sample;
+    //margin: 0 auto;
+    //text-align: center;
+    padding: 0 0 30px;
+  }
+}
+.product-cart{
+  button{
+    width: 40%;
+    font-size: 20px;
+    background-color: #bf2222;
+    color: white;
+    border: none;
+    padding: 10px;
+    margin: 20px auto 0;
+    text-transform: uppercase;
+    font-family: $extra-font-family;
+  }
+}
+.form{
+  background: url("img/bg-form.jpg") no-repeat center;
+  display: flex;
+  width: $width;
+  flex-direction: column;
+  margin-bottom: 100px;
+}
+.form{
+  h2{
+    @include sampleH2;
+  }
+}
+.form{
+  p{
+    @include sampleP;
+  }
+}
+.reserve-form{
+  display: flex;
+  width: 60%;
+  margin: 0 auto 100px;
+  height: 220px;
+  justify-content: space-evenly;
+}
+.left-side{
+  @include side;
+
+}
+
+.right-side{
+  @include side;
+
+}
+.left-side{
+  input{
+    @include input;
+  }
+}
+.right-side{
+  input{
+    @include input;
+  }
+}
+.right-side{
+  button{
+    height: 54px;
+    padding: 10px;
+    font-size: 20px;
+    background-color: #bf2222;
+    border: none;
+    color: white;
+    border-radius: 10px;
+    font-family: $extra-font-family;
+    text-transform: uppercase;
+  }
+}
+.info{
+  display: flex;
+  width: 100%;
+  margin: 0 auto 100px;
+  justify-content: space-evenly;
+}
+@include information;
+.tel{
+  &:before{
+    content: url("img/tel.png");
+    @include pseudoElement;
+  }
+}
+.address{
+  &:before{
+    content: url("img/address.png");
+   @include pseudoElement;
+  }
+}
+.time{
+  &:before{
+    content: url("img/clock.png");
+    @include pseudoElement;
+  }
+}
+
+.map{
+  display: flex;
+  background: url("img/bg-welcome.jpg") no-repeat;
+  width: $width;
+  justify-content: space-around;
+  align-items: center;
+}
+.map{
+  div{
+    padding: 20px;
+    border: 2px solid white;
+    margin: 20px;
+    width: 40%;
+    text-align: center;
+  }
+}
+.map{
+  p{
+    width: 45%;
+    color: white;
+    font-size: 50px;
+    font-family: $extra-font-family;
+  }
+}

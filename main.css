@@ -1,0 +1,571 @@
+.header-wrapper {
+  width: 90%;
+  margin: 0 auto;
+  padding: 30px;
+  display: flex;
+  background: url(img/bg-header.jpg);
+  flex-direction: column;
+}
+
+.top {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  margin-bottom: 50px;
+}
+
+.logo {
+  width: 30%;
+}
+
+.delivery-menu {
+  display: flex;
+  flex-direction: column;
+  width: 30%;
+}
+
+.delivery {
+  display: flex;
+  justify-content: right;
+  width: 100%;
+}
+
+.delivery * {
+  margin: 0 10px 20px 0;
+}
+
+.delivery:last-child {
+  margin-right: 0;
+}
+
+.nav {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.nav a {
+  text-transform: uppercase;
+  text-decoration: none;
+  font-size: 25px;
+}
+
+.bottom {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  position: relative;
+}
+
+.brand-name {
+  display: flex;
+  flex-direction: column;
+  width: 40%;
+}
+
+.brand-name h1 {
+  font-size: 130px;
+  font-family: "Alfa Slab One";
+  text-transform: uppercase;
+  margin-bottom: -40px;
+}
+
+.brand-name h2 {
+  font-size: 60px;
+  font-family: "Alfa Slab One";
+  text-transform: uppercase;
+}
+
+.brand-name p {
+  font-size: 25px;
+  border: 2px dashed #3d2514;
+  width: 65%;
+  text-align: center;
+  padding: 10px;
+}
+
+.brand-image {
+  width: 50%;
+}
+
+.brand-image img {
+  width: 100%;
+}
+
+.label {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  background-color: red;
+  position: absolute;
+  top: 70%;
+  left: 55%;
+}
+
+.label div {
+  width: 130px;
+  height: 130px;
+  border-radius: 50%;
+  border: 2px dashed white;
+  position: absolute;
+  top: 6%;
+  right: 6%;
+}
+
+.label p {
+  position: relative;
+  top: 35%;
+  color: white;
+  font-size: 40px;
+  text-align: center;
+}
+
+.middle-wrapper {
+  width: 90%;
+  margin: 0 auto;
+  padding: 30px;
+  display: flex;
+  background-color: white;
+  justify-content: space-around;
+  flex-direction: column;
+}
+
+.day-offer {
+  display: flex;
+  width: 70%;
+  justify-content: space-evenly;
+  margin: 0 auto 120px;
+}
+
+.most-popular {
+  background: url("img/img-1.png") no-repeat;
+  width: 47%;
+  background-size: contain;
+}
+
+.popular {
+  display: flex;
+  flex-direction: column;
+  width: 45%;
+  height: 400px;
+  justify-content: space-between;
+}
+
+.top-image {
+  background: url("img/img-2.png") no-repeat;
+  width: 100%;
+  height: 175px;
+  background-size: contain;
+}
+
+.bottom-image {
+  background: url("img/img-3.png") no-repeat;
+  width: 100%;
+  height: 175px;
+  background-size: contain;
+}
+
+.offer h3 {
+  color: white;
+  font-size: 25px;
+  padding: 20px 0 5px 10px;
+}
+.offer h2 {
+  color: white;
+  font-size: 35px;
+  padding: 0 0 0 10px;
+}
+
+.products {
+  display: flex;
+  width: 100%;
+  justify-content: space-around;
+}
+
+.product-cart {
+  display: flex;
+  flex-direction: column;
+  width: 30%;
+}
+
+.product-cart h3 {
+  font-size: 40px;
+  text-align: center;
+}
+
+.choose {
+  margin-bottom: 120px;
+}
+
+.choose .products .product-cart span {
+  font-size: 20px;
+  width: 100%;
+  padding: 10px;
+  box-sizing: border-box;
+  text-align: center;
+  margin: 0 auto;
+}
+
+.choose p {
+  font-size: 25px;
+  width: 15%;
+  background-color: #ffc045;
+  padding: 10px;
+  text-align: center;
+  margin: 0 auto;
+}
+
+.choose h2 {
+  font-size: 60px;
+  width: 60%;
+  font-family: "Alfa Slab One";
+  padding: 30px;
+  text-align: center;
+  margin: 0 auto;
+  text-transform: uppercase;
+}
+
+.choose span {
+  display: block;
+  font-size: 20px;
+  width: 70%;
+  text-align: center;
+  margin: 0 auto;
+  padding: 0 0 30px;
+}
+
+.product-cart button {
+  width: 40%;
+  font-size: 20px;
+  background-color: #bf2222;
+  color: white;
+  border: none;
+  padding: 10px;
+  margin: 20px auto 0;
+  text-transform: uppercase;
+  font-family: "Alfa Slab One";
+}
+
+.form {
+  background: url("img/bg-form.jpg") no-repeat center;
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+  margin-bottom: 100px;
+}
+
+.form h2 {
+  font-size: 60px;
+  width: 60%;
+  font-family: "Alfa Slab One";
+  padding: 30px;
+  text-align: center;
+  margin: 0 auto;
+  text-transform: uppercase;
+}
+
+.form p {
+  font-size: 25px;
+  width: 15%;
+  background-color: #ffc045;
+  padding: 10px;
+  text-align: center;
+  margin: 0 auto;
+}
+
+.reserve-form {
+  display: flex;
+  width: 60%;
+  margin: 0 auto 100px;
+  height: 220px;
+  justify-content: space-evenly;
+}
+
+.left-side {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 40%;
+}
+
+.right-side {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 40%;
+}
+
+.left-side input {
+  height: 30px;
+  padding: 10px;
+  font-size: 20px;
+  border-radius: 10px;
+  border: 1px solid lightgray;
+}
+
+.right-side input {
+  height: 30px;
+  padding: 10px;
+  font-size: 20px;
+  border-radius: 10px;
+  border: 1px solid lightgray;
+}
+
+.right-side button {
+  height: 54px;
+  padding: 10px;
+  font-size: 20px;
+  background-color: #bf2222;
+  border: none;
+  color: white;
+  border-radius: 10px;
+  font-family: "Alfa Slab One";
+  text-transform: uppercase;
+}
+
+.info {
+  display: flex;
+  width: 100%;
+  margin: 0 auto 100px;
+  justify-content: space-evenly;
+}
+
+.tel {
+  position: relative;
+  font-size: 25px;
+}
+
+.address {
+  position: relative;
+  font-size: 25px;
+}
+
+.time {
+  position: relative;
+  font-size: 25px;
+}
+
+.tel:before {
+  content: url("img/tel.png");
+  display: inline-block;
+  width: 50px;
+  height: 50px;
+  position: absolute;
+  left: -50px;
+  top: -10px;
+}
+
+.address:before {
+  content: url("img/address.png");
+  display: inline-block;
+  width: 50px;
+  height: 50px;
+  position: absolute;
+  left: -50px;
+  top: -10px;
+}
+
+.time:before {
+  content: url("img/clock.png");
+  display: inline-block;
+  width: 50px;
+  height: 50px;
+  position: absolute;
+  left: -50px;
+  top: -10px;
+}
+
+.map {
+  display: flex;
+  background: url("img/bg-welcome.jpg") no-repeat;
+  width: 100%;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.map div {
+  padding: 20px;
+  border: 2px solid white;
+  margin: 20px;
+  width: 40%;
+  text-align: center;
+}
+
+.map p {
+  width: 45%;
+  color: white;
+  font-size: 50px;
+  font-family: "Alfa Slab One";
+}
+
+@media (max-width: 1440px) {
+  .brand-name p {
+    width: 85%;
+  }
+  .logo img {
+    width: 60%;
+  }
+  .day-offer {
+    width: 100%;
+  }
+  .product-cart button {
+    width: 45%;
+    font-size: 16px;
+  }
+  .choose span {
+    font-size: 18px;
+  }
+  .choose .products .product-cart span {
+    font-size: 18px;
+  }
+  .choose h2 {
+    width: 60%;
+  }
+  .map div {
+    width: 50%;
+  }
+  .map p {
+    font-size: 59px;
+    text-align: center;
+  }
+}
+@media (max-width: 1280px) {
+  .brand-name h1 {
+    font-size: 90px;
+    margin-bottom: -35px;
+  }
+  .brand-name h2 {
+    font-size: 50px;
+  }
+  .brand-name p {
+    font-size: 17px;
+    width: 75%;
+  }
+  .menu a {
+    font-size: 20px;
+  }
+  .delivery * {
+    font-size: 15px;
+  }
+  .popular {
+    height: 406px;
+  }
+  .top-image {
+    height: 167px;
+  }
+  .bottom-image {
+    height: 167px;
+  }
+  .popular {
+    height: 381px;
+  }
+  .choose h2 {
+    width: 70%;
+  }
+  .choose span {
+    font-size: 16px;
+  }
+  .choose .products .product-cart span {
+    font-size: 16px;
+  }
+  .map div {
+    width: 55%;
+  }
+  .map p {
+    font-size: 55px;
+  }
+}
+@media (max-width: 1024px) {
+  .delivery-menu {
+    width: 35%;
+  }
+  .label {
+    width: 110px;
+    height: 110px;
+  }
+  .label div {
+    width: 90px;
+    height: 90px;
+    top: 7%;
+    right: 7%;
+  }
+  .label p {
+    font-size: 30px;
+  }
+  .brand-image {
+    width: 45%;
+  }
+  .logo img {
+    width: 70%;
+  }
+  .top-image {
+    height: 135px;
+  }
+  .bottom-image {
+    height: 135px;
+  }
+  .popular {
+    height: 307px;
+  }
+  .offer h3 {
+    color: white;
+    font-size: 20px;
+    padding: 20px 0 5px 10px;
+  }
+  .offer h2 {
+    color: white;
+    font-size: 30px;
+    padding: 0 0 0 10px;
+  }
+  .choose p {
+    font-size: 20px;
+    width: 20%;
+  }
+  .day-offer {
+    margin: 0 auto 85px;
+  }
+  .choose h2 {
+    width: 80%;
+  }
+  .choose span {
+    font-size: 14px;
+  }
+  .choose .products .product-cart span {
+    font-size: 14px;
+  }
+  .product-cart button {
+    font-size: 12px;
+  }
+  .reserve-form {
+    width: 90%;
+  }
+  .form h2 {
+    width: 70%;
+  }
+  .map {
+    flex-direction: column;
+  }
+  .map div {
+    width: 70%;
+  }
+  .map p {
+    width: 100%;
+  }
+}
+* {
+  margin: 0;
+  padding: 0;
+  color: #3d2514;
+}
+
+body {
+  font-family: "Bebas Neue", cursive;
+}
+
+.wrapper {
+  width: 100%;
+  margin: 0 auto;
+  background-color: wheat;
+}
+
+/*# sourceMappingURL=main.css.map */

@@ -1,0 +1,212 @@
+@media (max-width: 1440px) {
+  .brand-name {
+    p {
+      width: 85%;
+    }
+  }
+  .logo {
+    img {
+      width: 60%;
+    }
+  }
+  .day-offer {
+    width: 100%;
+  }
+  .product-cart {
+    button {
+      width: 45%;
+      font-size: 16px;
+    }
+  }
+  .choose {
+    span {
+      font-size: 18px;
+    }
+  }
+  .choose .products .product-cart {
+    span {
+      font-size: 18px;
+    }
+  }
+  .choose {
+    h2 {
+      width: 60%;
+    }
+  }
+  .map{
+    div {
+      width: 50%;
+    }
+  }
+  .map{
+    p {
+      font-size: 59px;
+      text-align: center;
+    }
+  }
+
+}
+@media (max-width: 1280px) {
+  .brand-name {
+    h1 {
+      font-size: 90px;
+      margin-bottom: -35px;
+    }
+  }
+  .brand-name {
+    h2 {
+      font-size: 50px;
+    }
+  }
+  .brand-name {
+    p {
+      font-size: 17px;
+      width: 75%;
+    }
+  }
+  .menu {
+    a {
+      font-size: 20px;
+    }
+  }
+  .delivery {
+    * {
+      font-size: 15px;
+    }
+  }
+  .popular {
+    height: 406px;
+  }
+  .top-image {
+    height: 167px;
+  }
+  .bottom-image {
+    height: 167px;
+  }
+  .popular {
+    height: 381px;
+  }
+  .choose {
+    h2 {
+      width: 70%;
+    }
+  }
+  .choose {
+    span {
+      font-size: 16px;
+    }
+  }
+  .choose .products .product-cart {
+    span {
+      font-size: 16px;
+    }
+  }
+  .map{
+    div {
+      width: 55%;
+    }
+  }
+  .map{
+    p{
+      font-size: 55px;
+    }
+  }
+
+
+}
+@media (max-width: 1024px) {
+  .delivery-menu {
+    width: 35%;
+  }
+  .label {
+    width: 110px;
+    height: 110px;
+  }
+  .label {
+    div {
+      width: 90px;
+      height: 90px;
+      top: 7%;
+      right: 7%;
+    }
+  }
+  .label {
+    p {
+      font-size: 30px;
+    }
+  }
+  .brand-image {
+    width: 45%;
+  }
+  .logo {
+    img {
+      width: 70%;
+    }
+  }
+  .top-image {
+    height: 135px;
+  }
+  .bottom-image {
+    height: 135px;
+  }
+  .popular {
+    height: 307px;
+  }
+  .offer {
+    @include offer-less;
+  }
+  .choose {
+    p {
+      font-size: 20px;
+      width: 20%;
+    }
+  }
+  .day-offer {
+    margin: 0 auto 85px;
+  }
+  .choose {
+    h2 {
+      width: 80%;
+    }
+  }
+  .choose {
+    span {
+      font-size: 14px;
+    }
+  }
+  .choose .products .product-cart {
+    span {
+      font-size: 14px;
+    }
+  }
+  .product-cart {
+    button {
+      font-size: 12px;
+    }
+  }
+  .reserve-form {
+    width: 90%;
+  }
+  .form{
+    h2 {
+      width: 70%;
+    }
+  }
+  .map{
+    flex-direction: column;
+  }
+  .map{
+    div {
+      width: 70%;
+    }
+  }
+  .map{
+    p {
+      width: 100%;
+    }
+  }
+
+}
+
+
+

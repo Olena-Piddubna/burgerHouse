@@ -1,0 +1,19 @@
+@import "variables";
+@import "header";
+@import "middle-section";
+@import "media";
+
+
+*{
+  margin: 0;
+  padding: 0;
+  color: $main-color;
+}
+  body{
+    font-family: $main-font-family;
+  }
+.wrapper{
+  width: 100%;
+  margin: 0 auto;
+  background-color: wheat;
+}
