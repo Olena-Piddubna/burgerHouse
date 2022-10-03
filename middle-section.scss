@@ -9,37 +9,48 @@
 }
 .day-offer{
   display: flex;
-  width: 70%;
+  width: 100%;
   justify-content: space-evenly;
-  margin: 0 auto 120px;
+  margin: 0 auto 100px;
+  height: 423px;
 
 }
 .most-popular{
-  background: url("img/img-1.png") no-repeat;
-  width: $width - 53%;
-  background-size: contain
+  background: url("img/img-1.png") no-repeat center ;
+  width: $width - 60%;
+  //background-size: contain
+  //object-fit: cover;
+  background-size: cover;
+  border-radius: 20px;
 
 }
 .popular{
   display: flex;
   flex-direction: column;
-  width: $width - 55%;
-  //background: aqua;
-  height: 400px;
+  width: $width - 60%;
+  //height: 400px;
   justify-content: space-between;
+  //background-size: contain
+
 
 }
 .top-image{
-  background: url("img/img-2.png") no-repeat;
+  background: url("img/img-2.png") no-repeat center;
   width: $width;
-  height: 175px;
-  background-size: contain;
+  height: 193px;
+  //background-size: contain;
+  //object-fit: cover;
+  background-size: cover;
+  border-radius: 20px;
 }
 .bottom-image{
-  background: url("img/img-3.png") no-repeat;
+  background: url("img/img-3.png") no-repeat center;
   width: $width;
-  height: 175px;
-  background-size: contain;
+  height: 193px;
+  //background-size: contain;
+  //object-fit: cover;
+  background-size: cover;
+  border-radius: 20px;
 }
 .offer{
   @include offer;
@@ -102,11 +113,20 @@ h3{
     font-size: 20px;
     background-color: #bf2222;
     color: white;
-    border: none;
+    border: 2px solid #bf2222;;
     padding: 10px;
     margin: 20px auto 0;
     text-transform: uppercase;
     font-family: $extra-font-family;
+    transition: all 0.2s;
+    &:hover{
+      color: #bf2222;
+      background-color: white;
+      //border-bottom: 2px solid #bf2222;
+      border-top: 2px solid #fff;
+      border-left: 2px solid #fff;
+      border-right: 2px solid #fff;
+    }
   }
 }
 .form{
@@ -128,7 +148,7 @@ h3{
 }
 .reserve-form{
   display: flex;
-  width: 60%;
+  width: 50%;
   margin: 0 auto 100px;
   height: 220px;
   justify-content: space-evenly;
@@ -163,6 +183,14 @@ h3{
     border-radius: 10px;
     font-family: $extra-font-family;
     text-transform: uppercase;
+    &:hover{
+      color: #bf2222;
+      background-color: white;
+      border-bottom: 2px solid #bf2222;
+      border-top: 2px solid #fff;
+      border-left: 2px solid #fff;
+      border-right: 2px solid #fff;
+    }
   }
 }
 .info{
@@ -195,15 +223,15 @@ h3{
   display: flex;
   background: url("img/bg-welcome.jpg") no-repeat;
   width: $width;
-  justify-content: space-around;
+  justify-content: space-evenly;
   align-items: center;
 }
 .map{
   div{
     padding: 20px;
     border: 2px solid white;
-    margin: 20px;
-    width: 40%;
+    margin: 20px 0;
+    width: 45%;
     text-align: center;
   }
 }
@@ -213,5 +241,110 @@ h3{
     color: white;
     font-size: 50px;
     font-family: $extra-font-family;
+    text-align: center;
+  }
+}
+.map{
+  div{
+    iframe{
+      width: 100%;
+    }
+  }
+}
+.menu-list{
+  display: flex;
+  width: $width;
+  flex-direction: column;
+  margin-bottom: 40px;
+}
+.menu-list-wr{
+  display: flex;
+  width: $width;
+  justify-content: center;
+
+}
+.item{
+  img{
+    width: 100%;
+    object-fit: fill;
+    cursor: pointer;
+    min-height: 100%;
+    transition: all 1.2s linear;
+    &:hover{
+      width: 120%;
+    }
+     }
+}
+.item{
+  .image-wrapper{
+    width: 50%;
+    height: 320px;
+  }
+}
+.item{
+  .description-wrapper{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    font-size: 20px;
+    justify-content: space-between;
+    background-color: #ffc045;
+    box-sizing: border-box;
+  }
+}
+.menu-list{
+  h1{
+    @include sampleH2;
+  }
+}
+.item{
+  button{
+    width: 50%;
+    font-size: 15px;
+    text-align: center;
+    padding: 10px;
+    border-radius: 10px;
+    border: 2px solid #bf2222;
+    color: white;
+    font-family: $extra-font-family;
+    background-color: #bf2222;
+    text-transform: uppercase;
+    &:hover{
+      color: #bf2222;
+      background-color: white;
+      //border-bottom: 2px solid #bf2222;
+      border-top: 2px solid #fff;
+      border-left: 2px solid #fff;
+      border-right: 2px solid #fff;
+    }
+}
+}
+.item{
+  display: flex;
+  width: 33%;
+  flex-wrap: wrap;
+  overflow: hidden;
+
+}
+.video{
+  width: $width;
+  display: flex;
+  justify-content: space-evenly;
+  margin-bottom: 100px;
+}
+.left-section, .right-section{
+  @include section-side;
+  width: 40%;
+}
+.left-section, .right-section{
+  iframe{
+    width: $width;
+  }
+}
+.left-section, .right-section{
+  h1{
+    font-size: 2rem;
+    margin: 0 auto;
   }
 }

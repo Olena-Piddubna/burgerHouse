@@ -1,0 +1,33 @@
+@import "variables";
+
+.footer{
+  width: $width;
+  display: flex;
+  background: url(img/bg-header.jpg);
+  justify-content: space-evenly;
+  height: 350px;
+}
+.about{
+  @include section-side;
+  width: 40%;
+  font-size: 20px;
+  justify-content: space-evenly;
+}
+.social{
+  display: flex;
+  width: 30%;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.social{
+  a{
+    width: 25%;
+    text-align: center;
+  }
+}
+.social{
+  img{
+    width: 50%;
+  }
+}
+

@@ -5,9 +5,9 @@ $main-color: #3d2514;
 $width: 100%;
 
 @mixin wrapper {
-  width: 90%;
-  margin: 0 auto;
-  padding: 30px;
+  width: 100%;
+  //padding: 20px;
+  box-sizing: border-box;
 }
 @mixin offer {
   h3 {
@@ -86,4 +86,8 @@ $width: 100%;
     position: relative;
     font-size: 25px;
   }
+}
+@mixin section-side{
+  display: flex;
+  flex-direction: column;
 }
